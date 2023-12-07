@@ -25,7 +25,7 @@ def part1():
       step+=1
   print(min(seeds))
   
-def zad2():
+def part2():
   seeds, *maps = open('input').read().split('\n\n')
   seeds = [int(seed) for seed in seeds.split()[1:]]
   maps = [[list(map(int, line.split())) for line in m.splitlines()[1:]] for m in maps]
@@ -58,5 +58,4 @@ def zad2():
   print(min(loc[0] for loc in locations))
   
 # zad1()
-# zad2()
-part22()
+part2()
